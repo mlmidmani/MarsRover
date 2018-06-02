@@ -5,4 +5,4 @@ Mars Rover submition for EventMobi Code Test
 mvn clean install
 
 # Run
-java jar mars.rover-0.1-SNAPSHOT.jar
+java -jar mars.rover-0.1-SNAPSHOT.jar
