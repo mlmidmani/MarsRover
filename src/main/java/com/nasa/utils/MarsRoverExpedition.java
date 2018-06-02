@@ -66,6 +66,7 @@ public class MarsRoverExpedition {
 	    
 	    System.out.println(Messages.getString("MarsRoverExpedition.1")); 
 	    //take on rovers coordinates and instruction until user enters empty rover coordinates
+	    //several rovers can land on the same spot, and travel throught spots that contain already another/several other rovers
 	    while (true) {
 	    	boolean roverCoordinatesOK = false;
 	    	boolean lastRover = false;
