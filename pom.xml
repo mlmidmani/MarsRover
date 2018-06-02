@@ -10,6 +10,7 @@
 				<artifactId>maven-jar-plugin</artifactId>
 				<configuration>
 					<archive>
+						<!-- needed to run the application as a jar -->
 						<manifest>
 							<mainClass>com.nasa.utils.MarsRoverExpedition</mainClass>
 						</manifest>
