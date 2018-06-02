@@ -46,7 +46,7 @@ public class MarsRoverExpedition {
 	    //outputs welcome text
 	    outputWellcomeText();
 	    //  prompt for the plateau's size
-	    System.out.print(Messages.getString("MarsRoverExpedition.0")); //$NON-NLS-1$
+	    System.out.print(Messages.getString("MarsRoverExpedition.0")); 
 	    boolean plateauSizeOK = false;
 	    //while not entring correct size
 	    while(!plateauSizeOK) {
@@ -60,11 +60,11 @@ public class MarsRoverExpedition {
 		    	plateauSizeOK  =true;
 		    } catch(IllegalArgumentException e) {
 		    	System.out.println(e.getMessage());
-		    	System.out.print(Messages.getString("MarsRoverExpedition.0")); //$NON-NLS-1$
+		    	System.out.print(Messages.getString("MarsRoverExpedition.0")); 
 		    }
 	    }
 	    
-	    System.out.println(Messages.getString("MarsRoverExpedition.1")); //$NON-NLS-1$
+	    System.out.println(Messages.getString("MarsRoverExpedition.1")); 
 	    //take on rovers coordinates and instruction until user enters empty rover coordinates
 	    while (true) {
 	    	boolean roverCoordinatesOK = false;
@@ -74,7 +74,7 @@ public class MarsRoverExpedition {
 	    	while(!roverCoordinatesOK)
 	    	{
 	    		//  prompt for the next rover landing location
-			    System.out.print(Messages.getString("MarsRoverExpedition.2")+(rovers.size()+1)+Messages.getString("MarsRoverExpedition.3")); //$NON-NLS-1$ //$NON-NLS-2$
+			    System.out.print(Messages.getString("MarsRoverExpedition.2")+(rovers.size()+1)+Messages.getString("MarsRoverExpedition.3"));  //$NON-NLS-2$
 			    // get the rover's landing as a String
 			    String roverLanding = scanner.nextLine();
 			    //parse the string for effective landing coordinates and direction
@@ -99,7 +99,7 @@ public class MarsRoverExpedition {
 	    	//While not having correct rover instructions
 	    	while(!roverInstructionsOK) {
 	    		//  prompt for the rover's instructions
-			    System.out.print(Messages.getString("MarsRoverExpedition.4")+rovers.size()+Messages.getString("MarsRoverExpedition.5")); //$NON-NLS-1$ //$NON-NLS-2$
+			    System.out.print(Messages.getString("MarsRoverExpedition.4")+rovers.size()+Messages.getString("MarsRoverExpedition.5"));  //$NON-NLS-2$
 			    // get the rover's instructions as a String
 			    String roverInstructions = scanner.nextLine();
 			    //parse the string for effective instructions
@@ -121,32 +121,32 @@ public class MarsRoverExpedition {
 	 * Output welkome text
 	 */
 	private void outputWellcomeText() {
-	    System.out.println(Messages.getString("MarsRoverExpedition.6")); //$NON-NLS-1$
-	    System.out.println(Messages.getString("MarsRoverExpedition.7")); //$NON-NLS-1$
-	    System.out.println(Messages.getString("MarsRoverExpedition.8")); //$NON-NLS-1$
-	    System.out.println(Messages.getString("MarsRoverExpedition.9")); //$NON-NLS-1$
-	    System.out.println(Messages.getString("MarsRoverExpedition.10")); //$NON-NLS-1$
-	    System.out.println(Messages.getString("MarsRoverExpedition.11")); //$NON-NLS-1$
-	    System.out.println(Messages.getString("MarsRoverExpedition.12")); //$NON-NLS-1$
-	    System.out.println(Messages.getString("MarsRoverExpedition.13")); //$NON-NLS-1$
+	    System.out.println(Messages.getString("MarsRoverExpedition.6")); 
+	    System.out.println(Messages.getString("MarsRoverExpedition.7")); 
+	    System.out.println(Messages.getString("MarsRoverExpedition.8")); 
+	    System.out.println(Messages.getString("MarsRoverExpedition.9")); 
+	    System.out.println(Messages.getString("MarsRoverExpedition.10")); 
+	    System.out.println(Messages.getString("MarsRoverExpedition.11")); 
+	    System.out.println(Messages.getString("MarsRoverExpedition.12")); 
+	    System.out.println(Messages.getString("MarsRoverExpedition.13")); 
 
 	}
 	/**
 	 * prints results
 	 */
 	private void printRoversCoordinates() {
-		System.out.println(Messages.getString("MarsRoverExpedition.14")); //$NON-NLS-1$
-		System.out.println(Messages.getString("MarsRoverExpedition.15")); //$NON-NLS-1$
-	    System.out.println(Messages.getString("MarsRoverExpedition.16")); //$NON-NLS-1$
-		System.out.println(Messages.getString("MarsRoverExpedition.17")); //$NON-NLS-1$
-		System.out.println(Messages.getString("MarsRoverExpedition.18")); //$NON-NLS-1$
-		System.out.println(Messages.getString("MarsRoverExpedition.19")); //$NON-NLS-1$
-		System.out.println(Messages.getString("MarsRoverExpedition.20")); //$NON-NLS-1$
-		System.out.println(Messages.getString("MarsRoverExpedition.21")); //$NON-NLS-1$
+		System.out.println(Messages.getString("MarsRoverExpedition.14")); 
+		System.out.println(Messages.getString("MarsRoverExpedition.15")); 
+	    System.out.println(Messages.getString("MarsRoverExpedition.16")); 
+		System.out.println(Messages.getString("MarsRoverExpedition.17")); 
+		System.out.println(Messages.getString("MarsRoverExpedition.18")); 
+		System.out.println(Messages.getString("MarsRoverExpedition.19")); 
+		System.out.println(Messages.getString("MarsRoverExpedition.20")); 
+		System.out.println(Messages.getString("MarsRoverExpedition.21")); 
 			     
 		 for(int i=0;i<rovers.size();i++) {
 			Rover rover = rovers.get(i);
-			System.out.println(Messages.getString("MarsRoverExpedition.22")+(i+1)+Messages.getString("MarsRoverExpedition.23")+rover.getX()+Messages.getString("MarsRoverExpedition.24")+rover.getY()+Messages.getString("MarsRoverExpedition.25")+rover.getDirection()); //$NON-NLS-1$ //$NON-NLS-2$ //$NON-NLS-3$ //$NON-NLS-4$
+			System.out.println(Messages.getString("MarsRoverExpedition.22")+(i+1)+Messages.getString("MarsRoverExpedition.23")+rover.getX()+Messages.getString("MarsRoverExpedition.24")+rover.getY()+Messages.getString("MarsRoverExpedition.25")+rover.getDirection());  //$NON-NLS-2$ //$NON-NLS-3$ //$NON-NLS-4$
 		}
 		
 	}
@@ -156,9 +156,9 @@ public class MarsRoverExpedition {
 	 * @param plateauS entered string
 	 */
 	private void parsePlateauSize(String plateauS) {
-		final String errorMessage = new String(Messages.getString("MarsRoverExpedition.26")); //$NON-NLS-1$
+		final String errorMessage = new String(Messages.getString("MarsRoverExpedition.26")); 
 		//split string by space
-		String[] coordinates = plateauS.split(Messages.getString("MarsRoverExpedition.27")); //$NON-NLS-1$
+		String[] coordinates = plateauS.split(Messages.getString("MarsRoverExpedition.27")); 
 		//throw exception if the number of arguments is not correct
 		if(coordinates.length!=2) {
 			throw new IllegalArgumentException(errorMessage);
@@ -178,7 +178,7 @@ public class MarsRoverExpedition {
 	 * @return list of instructions
 	 */
 	private List<InstructionEnum> parseRoverInstructions(String roverInstructions) {
-		final String errorMessage = new String(Messages.getString("MarsRoverExpedition.28")); //$NON-NLS-1$
+		final String errorMessage = new String(Messages.getString("MarsRoverExpedition.28")); 
 		//transform the string to a list of separate characters
 		char[] roverInstructionsAsCharArray = roverInstructions.toCharArray();
 		List<InstructionEnum> instructions = new ArrayList<InstructionEnum>();
@@ -199,9 +199,9 @@ public class MarsRoverExpedition {
 	 */
 	private Rover parseRoverLandingCoordinates(String roverLanding) {
 		Rover rover = new Rover(MarsRoverExpedition.this);
-		final String errorMessage = new String(Messages.getString("MarsRoverExpedition.29")); //$NON-NLS-1$
+		final String errorMessage = new String(Messages.getString("MarsRoverExpedition.29")); 
 		//Split entered value by spaces
-		String[] coordinates = roverLanding.split(Messages.getString("MarsRoverExpedition.30")); //$NON-NLS-1$
+		String[] coordinates = roverLanding.split(Messages.getString("MarsRoverExpedition.30")); 
 		//throw exception when invalid number of arguments
 		if(coordinates.length!=3) {
 			throw new IllegalArgumentException(errorMessage);
